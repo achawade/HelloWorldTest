@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>HelloWorld_NexusINTG_App</groupId>
+    <artifactId>HelloWorld_NexusINTG_App</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <!-- Add project modules -->
+    	<module>Project1</module>
+    </modules>
+	<repositories>
+        <repository>
+          <id>CICD_Test_Project_repo</id>
+          <name>CICD_Test_Project Maven Repository</name>
+          <url>https://developer.us2.oraclecloud.com/profile/developer62708-arpandas/s/developer62708-arpandas_cicd-test-project_19122/maven/</url>
+          <releases>
+          <checksumPolicy>ignore</checksumPolicy>
+          </releases>
+          <snapshots>
+          <checksumPolicy>ignore</checksumPolicy>
+          </snapshots>
+          <layout>default</layout>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>CICD_Test_Project_repo</id>
+          <name>CICD_Test_Project Maven Repository</name>
+          <url>https://developer.us2.oraclecloud.com/profile/developer62708-arpandas/s/developer62708-arpandas_cicd-test-project_19122/maven/</url>
+          <releases>
+          <checksumPolicy>ignore</checksumPolicy>
+          </releases>
+          <snapshots>
+          <checksumPolicy>ignore</checksumPolicy>
+          </snapshots>
+          <layout>default</layout>
+        </pluginRepository>
+      </pluginRepositories>
+</project>
