@@ -9,11 +9,21 @@
         <!-- Add project modules -->
     	<module>Project1</module>
     </modules>
+	<distributionManagement>
+  <repository>
+    <id>releases</id>
+    <url>http://100.78.103.162:8081/nexus/content/repositories/releases</url>
+  </repository>
+   <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://100.78.103.162:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
 	<repositories>
         <repository>
-          <id>CICD_Test_Project_repo</id>
-          <name>CICD_Test_Project Maven Repository</name>
-          <url>https://developer.us2.oraclecloud.com/profile/developer62708-arpandas/s/developer62708-arpandas_cicd-test-project_19122/maven/</url>
+          <id>thirdparty</id>
+          <name></name>
+          <url>http://100.78.103.162:8081/nexus/content/repositories/thirdparty/</url>
           <releases>
           <checksumPolicy>ignore</checksumPolicy>
           </releases>
@@ -25,9 +35,9 @@
       </repositories>
       <pluginRepositories>
         <pluginRepository>
-          <id>CICD_Test_Project_repo</id>
-          <name>CICD_Test_Project Maven Repository</name>
-          <url>https://developer.us2.oraclecloud.com/profile/developer62708-arpandas/s/developer62708-arpandas_cicd-test-project_19122/maven/</url>
+          <id>thirdparty</id>
+          <name></name>
+          <url>http://100.78.103.162:8081/nexus/content/repositories/thirdparty/</url>
           <releases>
           <checksumPolicy>ignore</checksumPolicy>
           </releases>
