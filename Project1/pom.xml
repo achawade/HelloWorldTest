@@ -31,7 +31,7 @@
   </repository>
    <snapshotRepository>
     <id>snapshots</id>
-    <url>http://172.29.215.18:8081/nexus/content/repositories/snapshots</url>
+    <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
 </distributionManagement>
     
