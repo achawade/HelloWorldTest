@@ -27,7 +27,7 @@
     <distributionManagement>
   <repository>
     <id>releases</id>
-    <url>http://172.29.215.18:8081/nexus/content/repositories/releases</url>
+    <url>http://localhost:8081/nexus/content/repositories/releases</url>
   </repository>
    <snapshotRepository>
     <id>snapshots</id>
@@ -102,7 +102,7 @@
         <repository>
           <id>thirdparty</id>
           <name></name>
-          <url>http://172.29.215.18:8081/nexus/content/repositories/thirdparty/</url>
+          <url>http://localhost:8081/nexus/content/repositories/thirdparty/</url>
           <releases>
           <checksumPolicy>ignore</checksumPolicy>
           </releases>
@@ -116,7 +116,7 @@
         <pluginRepository>
           <id>thirdparty</id>
           <name></name>
-          <url>http://172.29.215.18:8081/nexus/content/repositories/thirdparty/</url>
+          <url>http://localhost:8081/nexus/content/repositories/thirdparty/</url>
           <releases>
           <checksumPolicy>ignore</checksumPolicy>
           </releases>
