@@ -145,7 +145,7 @@
         <serverUrl>${dev.serverUrl}</serverUrl>
         <user>${dev.user}</user>
         <password>${dev.password}</password>
-        <configplan>${scac.input.dir}/dev_Project1_cfgplan.xml</configplan>
+        <configplan>${scac.input.dir}dev_Project1_cfgplan.xml</configplan>
       </properties>
     </profile>
     <profile>
@@ -160,7 +160,7 @@
         <serverUrl>${test.serverUrl}</serverUrl>
         <user>${test.user}</user>
         <password>${test.password}</password>
-        <configplan>${scac.input.dir}/test_Project1_cfgplan.xml</configplan>
+        <configplan>${scac.input.dir}test_Project1_cfgplan.xml</configplan>
       </properties>
     </profile>
   </profiles>
