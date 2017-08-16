@@ -24,7 +24,7 @@
         <version>12.1.3-0-0</version>
     </parent>
     
-    	<distributionManagement>
+  <distributionManagement>
   <repository>
     <id>TestRepo</id>
     <url>http://localhost:8081/nexus/content/repositories/TestRepo/</url>
@@ -41,7 +41,7 @@
         <scac.displayLevel>1</scac.displayLevel>
         <!-- if you are using a config plan, uncomment the following line and update to point
              to your config plan -->
-        <!--<configplan>${scac.input.dir}/configplan.xml</configplan>-->
+        <configplan>${scac.input.dir}/configplan.xml</configplan>
         
         <!-- These parameters are used by the deploy and undeploy goals --> 
         <composite.name>${project.artifactId}</composite.name>
@@ -91,6 +91,24 @@
                  <!-- extensions=true is needed to use the custom sar packaging type -->
                 <extensions>true</extensions>
             </plugin>
+			<plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <executions>
+					<execution>
+						<phase>initialize</phase>
+						<goals>
+							<goal>read-project-properties</goal>
+						</goals>
+						<configuration>
+							<files>
+								<file>${scac.input.dir}/Environment.properties</file>
+							</files>
+						</configuration>
+					</execution>
+				</executions>
+            </plugin>
         </plugins>
     </build>
 	
@@ -122,4 +140,36 @@
           <layout>default</layout>
         </pluginRepository>
       </pluginRepositories>
+	<profiles>
+		<profile>
+			<id>serverConfig-dev</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>dev</value>
+				</property>
+			</activation>
+			<properties>
+				<serverUrl>${dev.serverUrl}</serverUrl>
+                <user>${dev.user}</user>
+                <password>${dev.password}</password>
+				<configplan>${scac.input.dir}/dev_Project1_cfgplan.xml</configplan>
+			</properties>
+		</profile>
+		<profile>
+			<id>serverConfig-test</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>test</value>
+				</property>
+			</activation>
+			<properties>
+				<serverUrl>${test.serverUrl}</serverUrl>
+                <user>${test.user}</user>
+                <password>${test.password}</password>
+				<configplan>${scac.input.dir}/test_Project1_cfgplan.xml</configplan>
+			</properties>
+		</profile>
+	</profiles>
 </project>
