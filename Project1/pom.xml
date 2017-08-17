@@ -10,7 +10,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>HelloWorld_NexusINTG_App</groupId>
   <artifactId>Project1</artifactId>
-  <version>4.0</version>
+  <version>5.0</version>
   <packaging>sar</packaging>
   <!--
            The parent points to the common SOA parent POM.  That is a special POM that is
