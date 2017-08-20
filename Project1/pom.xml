@@ -71,7 +71,7 @@
         <configuration>
           <compositeName>${project.artifactId}</compositeName>
           <composite>${scac.input}</composite>
-          <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
+          <sarLocation>${scac.output.dir}/${project.artifactId}_rev${project.version}.jar</sarLocation>
           <serverUrl>${serverUrl}</serverUrl>
           <user>${user}</user>
           <password>${password}</password>
