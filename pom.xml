@@ -9,12 +9,12 @@
         <!-- Add project modules -->
     	<module>Project1</module>
     </modules>
-<distributionManagement>
+<!--<distributionManagement>
   <repository>
     <id>TestRepo</id>
     <url>http://localhost:8081/nexus/content/repositories/TestRepo/</url>
   </repository>
-</distributionManagement>
+</distributionManagement>-->
 	<repositories>
         <repository>
           <id>thirdparty</id>
