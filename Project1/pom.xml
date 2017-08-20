@@ -96,7 +96,8 @@
             </goals>
             <configuration>
               <files>
-                <file>${scac.input.dir}/Environment.properties</file>
+                <!--<file>${scac.input.dir}/Environment.properties</file>-->
+				<file>C:/config/Environment.properties</file>
               </files>
             </configuration>
           </execution>
