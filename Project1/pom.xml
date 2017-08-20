@@ -23,12 +23,12 @@
     <artifactId>sar-common</artifactId>
     <version>12.1.3-0-0</version>
   </parent>
-  <distributionManagement>
+  <!--<distributionManagement>
     <repository>
       <id>TestRepo</id>
       <url>http://localhost:8081/nexus/content/repositories/TestRepo/</url>
     </repository>
-  </distributionManagement>
+  </distributionManagement> -->
   <properties>
     <!-- These parameters are used by the compile goal -->
     <scac.input.dir>${project.basedir}/SOA/</scac.input.dir>
